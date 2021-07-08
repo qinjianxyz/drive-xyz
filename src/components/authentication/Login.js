@@ -56,6 +56,10 @@ export default function Login() {
             >
               Demo Login
             </Button>
+            <Alert variant="primary">
+              Demo User can not add files or folders. Sign up for full
+              functionality.
+            </Alert>
           </Form>
           <div className="w-100 text-center mt-3">
             <Link to="/forgot-password">Forgot Password?</Link>
