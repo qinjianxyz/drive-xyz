@@ -26,6 +26,11 @@ export default function Login() {
     setLoading(false);
   }
 
+  function demoLogin() {
+    emailRef.current.value = "demo@gmail.com";
+    passwordRef.current.value = "qwefghbnm123!";
+  }
+
   return (
     <>
       <Card>
@@ -43,6 +48,13 @@ export default function Login() {
             </Form.Group>
             <Button disabled={loading} className="w-100" type="submit">
               Log In
+            </Button>
+            <Button
+              onClick={demoLogin}
+              disabled={loading}
+              className="w-100 mt-3"
+            >
+              Demo Login
             </Button>
           </Form>
           <div className="w-100 text-center mt-3">

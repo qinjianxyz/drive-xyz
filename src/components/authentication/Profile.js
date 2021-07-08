@@ -28,6 +28,9 @@ export default function Profile() {
           <Link to="update-profile" className="btn btn-primary w-100 mt-3">
             Update Profile
           </Link>
+          <Link to="/" className="btn btn-primary w-100 mt-3">
+            Back to Dashboard
+          </Link>
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
