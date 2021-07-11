@@ -8,6 +8,7 @@ import { useParams, useLocation } from "react-router-dom";
 import FolderBreadcrumbs from "./FolderBreadcrumbs";
 import AddFileButton from "./AddFileButton";
 import File from "./File";
+import DeleteFolder from "./DeleteFolder";
 
 export default function Dashboard() {
   const { folderID } = useParams();
@@ -24,6 +25,7 @@ export default function Dashboard() {
           <FolderBreadcrumbs currentFolder={folder} />
           <AddFileButton currentFolder={folder} />
           <AddFolderButton currentFolder={folder} />
+          <DeleteFolder currentFolder={folder} />
         </div>
         {childFolders.length > 0 && (
           <div className="d-flex flex-wrap">
