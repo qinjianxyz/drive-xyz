@@ -6,7 +6,7 @@ export default function NavbarComponent() {
   return (
     <Navbar bg="light" expand="xl">
       <Navbar.Brand as={Link} to="/">
-        XYZ Drive
+        Cloud Drive XYZ
       </Navbar.Brand>
       <Nav>
         <Nav.Link as={Link} to="/user">
